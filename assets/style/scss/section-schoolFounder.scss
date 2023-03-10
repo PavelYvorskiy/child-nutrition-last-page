@@ -1,0 +1,133 @@
+.schoolFounder-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.schoolFounder-content-box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0;
+}
+.schoolFounder-item{
+    width: 50%;
+    display:flex;
+    flex-direction: column;
+    &__img{
+      max-width: 578px;
+      width: 100%;
+     padding-top: 80px;
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .container-title{
+        text-align: start;
+        align-items: flex-start;
+    }
+}
+.schoolFounder-list{
+    width: 100%;
+    padding:20px 50px;
+    margin-top: 20px;
+    overflow: hidden;
+    &__item{
+        position: relative;
+        display: block;
+        padding: 15px 0;
+        line-height: 1.3;
+        color: var(--gray);
+
+        &::before{
+            content: url(../../svg/marker2.svg);
+            width: 30px;
+            height: 30px;
+            background: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            position: absolute;
+            left: -50px;
+            border: 1px solid var(--light-green);
+        }
+        p{
+            line-height: 1.3;
+            b{
+                font-weight: 500;
+            }
+        }
+    }
+}
+.schoolFounder-content-certificate{
+    width: 100%;
+    height: auto;
+    padding: 10px 20px 0;
+    background: #FFFFFF;
+    border: 1px solid #E6E6E6;
+    box-shadow: 0px 30px 30px -20px rgba(0, 0, 0, 0.07);
+    border-radius: 20px;
+    transform: translateY(-90px);
+    overflow: hidden;
+}
+.certificate-blosk-item{
+    width: auto;
+   height: 210px;
+    // height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--green);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 3px;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;  
+    }
+}
+@media(max-width:768px){
+    .schoolFounder-content-box{
+       flex-direction: column;
+    }
+    .certificate-blosk-item{
+        height: 170px;
+    }
+ 
+    .schoolFounder-item{
+        width: 100%;
+        align-items: center;
+        &__img{
+            padding-top: 0;
+        }
+        .container-title{
+            text-align: center;
+        }
+    }
+  }
+  @media(max-width:480px){
+    .schoolFounder-list{
+        &__item{
+            &::before{
+                content: url(../../svg/marker2.svg);
+                width: 22px;
+                height: 22px;
+                background: var(--white);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                position: absolute;
+                left: -30px;
+                border: 1px solid var(--light-green);
+            }
+        }
+    }
+  }
+  

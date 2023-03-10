@@ -1,0 +1,25 @@
+[data-aos=anim-number] {
+  opacity: 0;
+  -webkit-transform: rotate(0);
+  transform: rotate(0);
+}
+[data-aos=anim-number].aos-animate {
+  opacity: 1;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+[data-aos=anim-number-text] {
+  opacity: 0;
+  letter-spacing: 1em;
+  -webkit-transform: translateZ(40px) translateY(30px);
+  transform: translateZ(40px) translateY(30px);
+}
+[data-aos=anim-number-text].aos-animate {
+  letter-spacing: normal;
+  -webkit-transform: translateZ(40px) translateY(30px);
+  transform: translateZ(40px) translateY(30px);
+  opacity: 1;
+}
+
+/*# sourceMappingURL=aos-animation.css.map */

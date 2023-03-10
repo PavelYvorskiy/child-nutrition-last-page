@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$maxWidth: 1280;
+
+@mixin adaptive-font($pcSize , $mobSize) {
+  $addSize:     $pcSize - $mobSize;
+  $addMobSize:  $addSize + $addSize * 0.7;
+  
+  @media (max-width: 767px) {
+    font-size: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidth}));
+  }
+  @media (min-width: 767px){
+    font-size: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
+  }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+*,*::before,*::after{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active{
+  outline: none;
+
+}
+a:focus,
+a:active,
+a:hover{
+   outline: none;
+}
+html,
+body{
+  width: 100vw;
+  height: 100%;
+  font-size: 100%;
+  font-size: 14px;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-family: 'Montserrat', sans-serif;
+
+}
+h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6{
+
+  font-weight: 300;
+ }
+
+a {
+  text-decoration: none;
+}
+ul,li {
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+}
+button,
+input,
+textarea {
+  border: none;
+  outline: none;
+  font-family: inherit;
+}
+textarea {
+  resize: none;
+}
+
+button {
+  cursor: pointer;
+  &::-moz-focus-inner{
+    padding: 0;
+    border: 0;
+  }
+}
+body {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+section{
+  width: 100%
+}
+
+h1{
+  @include adaptive-font(38, 28 )
+}
+h2{
+  @include adaptive-font(34, 24 )
+}
+h3{
+  @include adaptive-font(22,12 )
+}
+h4{
+  @include adaptive-font(20,16 )
+}
+h5{
+  @include adaptive-font(14,10 )
+}
+h6{
+  @include adaptive-font(18,16 )
+}
+p{
+  @include adaptive-font(16,12 );
+  color: var(--gray);
+  font-weight: 400;
+}
+
+
