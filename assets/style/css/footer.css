@@ -38,6 +38,21 @@
   color: var(--light-gray);
 }
 
+.social-block {
+  display: flex;
+  padding: 10px 0;
+}
+.social-block__item {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.social-block__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 @media (max-width: 1000px) {
   .footer-container {
     padding: 30px 40px;
