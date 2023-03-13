@@ -29,6 +29,9 @@
   height: 100%;
   object-fit: cover;
 }
+.schoolFounder-item__img_courses {
+  padding-top: 0;
+}
 .schoolFounder-item .container-title {
   text-align: start;
   align-items: flex-start;

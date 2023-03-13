@@ -200,6 +200,14 @@
 .study-card-mob-item{
     padding: 20px ;
 }
+.study-content-img{
+    height: 200px;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
 @media(max-width:1000px){
     .desktop-list-item{
         padding: 20px;
