@@ -1,0 +1,37 @@
+.courses-content {
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.courses-title-block {
+  max-width: 560px;
+  min-height: 400px;
+  width: 100%;
+  background: url(../../img/teamBlock/teamBG.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.courses-title h2 {
+  color: rgba(102, 102, 102, 0.831372549);
+  font-weight: 500;
+  text-shadow: 1px 1px 6px white;
+}
+.courses-title h2 b {
+  font-weight: 500;
+  color: var(--green);
+}
+
+.courses-block-card {
+  padding: 60px 0;
+}
+
+/*# sourceMappingURL=ourPrograms.css.map */

@@ -17,8 +17,9 @@
 .additionalLessons-content-box {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   align-items: stretch;
-  justify-content: space-between;
+  justify-content: center;
   margin: 40px 0;
   padding: 20px 0;
   overflow: hidden;
