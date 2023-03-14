@@ -50,6 +50,7 @@
 .container-title h2 {
   color: var(--gray);
   font-weight: 500;
+  padding: 10px;
 }
 .container-title h2 b {
   font-weight: 500;
