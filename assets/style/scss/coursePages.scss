@@ -125,7 +125,7 @@
     }
   }
   .dropdown-list-box{
-    width: 70%;
+    width: 80%;
     height: auto;
     opacity: 1;
     visibility: visible;
@@ -156,4 +156,12 @@
       }
     }
    }
+}
+@media(max-width:768px){
+  .dropdown-link-box{
+    &__icon{
+      width: 30px;
+      height: 30px;
+    }
+  }
 }

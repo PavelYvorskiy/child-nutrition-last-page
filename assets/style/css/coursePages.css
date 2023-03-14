@@ -130,7 +130,7 @@
 }
 
 .dropdown-list-box {
-  width: 70%;
+  width: 80%;
   height: auto;
   opacity: 1;
   visibility: visible;
@@ -159,6 +159,13 @@
   line-height: 1.4;
   margin-left: 20px;
   padding: 3px;
+}
+
+@media (max-width: 768px) {
+  .dropdown-link-box__icon {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 /*# sourceMappingURL=coursePages.css.map */
