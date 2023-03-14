@@ -62,4 +62,103 @@
   margin-top: 40px;
 }
 
+.courses-program-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+}
+.courses-program-content .container-title {
+  width: 100%;
+}
+
+.courses-program-content-block {
+  width: 100%;
+  min-height: 400px;
+  border-radius: 20px;
+  margin: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+  border: 1px solid var(--light-gray);
+  box-shadow: 0px 30px 30px -20px rgba(0, 0, 0, 0.07);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.courses-programs-items {
+  max-width: 1000px;
+  width: 100%;
+}
+
+.courses-program-item {
+  margin: 10px 0;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--light-green);
+}
+
+.dropdown-link-box {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.dropdown-link-box__text {
+  max-width: 70%;
+}
+.dropdown-link-box__text h3 {
+  color: var(--green);
+}
+.dropdown-link-box__icon {
+  width: 50px;
+  height: 50px;
+  transform: rotate(45deg);
+  transition: all 0.5s;
+}
+.dropdown-link-box__icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.dropdown-link-box__icon.active {
+  transform: rotate(0deg);
+  transition: all 0.5s;
+}
+
+.dropdown-list-box {
+  width: 70%;
+  height: auto;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.8s;
+  overflow: hidden;
+  margin-top: 10px;
+}
+.dropdown-list-box.d-none {
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+.dropdown-list-box ul {
+  margin-left: 20px;
+}
+.dropdown-list-box ul li h4 {
+  color: var(--green);
+  padding: 10px 0;
+}
+.dropdown-list-box ul li h4 b {
+  color: var(--gray);
+  font-weight: 400;
+}
+.dropdown-list-box ul li p {
+  line-height: 1.4;
+  margin-left: 20px;
+  padding: 3px;
+}
+
 /*# sourceMappingURL=coursePages.css.map */

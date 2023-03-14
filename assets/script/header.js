@@ -4,3 +4,5 @@ btnActiveNavMenu.addEventListener("click", () => {
   btnActiveNavMenu.classList.toggle("active");
   navbarMob.classList.toggle("active");
 });
+
+
