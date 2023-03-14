@@ -1,4 +1,5 @@
-.courses-content-box{
+.courses-content-box,
+.prices-content-box{
     width: 100%;
     display: flex;
     align-items: center;
@@ -17,6 +18,111 @@
     
 
 }
+.prices-content-block{
+  width: 100%;
+  min-height: 500px;
+  margin-top: 40px;
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../../img/teamBlock/teamBG.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.price-card-item{
+  max-width: 320px;
+  width: 100%;
+   height: 520px;
+  padding-bottom: 20px;
+  border: 1px solid var(--light-gray);
+  background-color: #ffffffdb;
+  border-radius: 20px;
+  box-shadow: 0px 30px 30px -20px rgba(0, 0, 0, 0.07);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  position: relative;
+}
+.price-card-header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+ 
+  &_light{
+    background: var(--light-gray);
+    h4{
+      color: var(--gray);
+    }
+  }
+  &_standart{
+    background: var(--light-green);
+  }
+  &_hard{
+    background: var(--green);
+    h4{
+      color: var(--white);
+    }
+  }
+}
+.price-card-list{
+  padding: 20px;
+  li{
+    h5{
+      color: var(--green);
+      font-weight: 600;
+      padding: 6px 0;
+      text-align: start;
+      font-size: 14px;
+    }
+    p{
+      font-size: 12px;
+      line-height: 1.2;
+      margin-left: 20px;
+    }
+  }
+}
+.price-card-button{
+  background: var(--orange);
+  color: var(--white);
+  padding: 10px 25px;
+  border-radius: 40px;
+  font-size: 14px;
+  transition: 0.5s;
+  margin: 10px 0;
+ 
+  &:hover{
+      background: var(--dark-orange);
+  }
+}
+.price-title-box{
+  width: 100%;
+  // padding: 20px;
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h3{
+    color: var(--green);
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 0;
+  }
+  p{
+    text-align: center;
+    b{
+      color: var(--green);
+    }
+  }
+}
+
 .courses-item-content{
     position: relative;
     display: flex;
@@ -160,11 +266,38 @@
     }
    }
 }
+.section-video-courses{
+  background: url(../../svg/Ellipse_backgraund_bottom.svg);
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 60px;
+}
+.video-block{
+  max-width: 800px;
+  width: 100%;
+  height: 400px;
+  margin-top: 40px;
+  
+}
+.price-content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+}
 @media(max-width:768px){
   .dropdown-link-box{
     &__icon{
       width: 30px;
       height: 30px;
     }
+  }
+  .video-block{
+  
+    height: 260px;
+    margin-top: 40px;
   }
 }
